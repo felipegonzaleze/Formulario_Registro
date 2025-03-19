@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de Registro</title>
+  </head>
+  <body>
+    <h1>Formulario de Registro</h1>
+    <p>Por favor llena tus datos para registrarte.</p>
+    <form method="post">
+      <fieldset>
+          <legend>Datos personales</legend>
+          <div>
+            <label for="nombre">Nombre: </label>
+            <input id="nombre" type="text" name="nombre" placeholder="Juan" required>
+          </div>
+          <div>
+            <label for="apellido">Apellido:</label>
+            <input id="apellido" type="text" name="apellido" placeholder="Peréz" required>
+          </div>
+          <div>
+            <label for="username">Nombre de usuario: </label>
+            <input id="username" type="text" name="username" placeholder="JuanP" required>
+          </div>
+          <div>
+            <label for="email">Correo electrónico: </label>
+            <input id="email" type="text" name="email" placeholder="tucorreo@email.com" required>
+          </div>
+          <div>
+            <label for="clave">Contraseña: </label>
+            <input id="clave" type="password" name="clave" placeholder="contraseña123" required>
+          </div>
+          <div>
+            <label for="confirmar_clave">Confimar Contraseña: </label>
+            <input id="confirmar_clave" type="password" name="confirmar_clave" placeholder="contraseña123" required>
+          </div>
+          <div>
+            <label>Género:</label>
+            <input id="masculino" type="radio" name="genero" checked>
+            <label for="masculino">Masculino</label>
+            <input id="femenino" type="radio" name="genero">
+            <label for="femenino">Femenino</label>
+            <input id="none" type="radio" name="genero">
+            <label for="none">Otro</label>
+          </div>
+          <div>
+            <label for="nacimiento">Fecha de nacimiento: </label>
+            <input id="nacimiento" type="date" name="nacimiento" required> 
+          </div>
+          <div>
+            <label for="newsletter">Quieres que te lleguen correos de nosotros?</label>
+            <input id="si" type="checkbox" name="newsletter" unchecked>
+            <label for="si">Si</label>
+          </div>
+          <div>
+            <label for="comment">Tienes algún comentario adicional?</label>
+          </div>
+          <div>
+            <textarea id="comment" name="comment" rows="5" col="40" placeholder="Escribe aquí tu comentario."></textarea>
+          </div>
+          <div>
+            <label for="hobby">Por último, dinos algún hobby tuyo!</label>
+            <select id="hobby" name="hobby">
+              <option value="">(selecciona uno)</option>
+              <option value="videojuegos">Jugar videojuegos</option>
+              <option value="música">Escuchar música</option>
+              <option value="series">Ver series/películas</option>
+              <option value="deporte">Hacer deporte</option>
+            </select>
+          </div>                
+        </fieldset>
+        <input id="submit" type="submit" value="Enviar">
+    </form>
+  </body>
+</html>
